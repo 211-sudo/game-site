@@ -232,7 +232,7 @@ header nav ul li.btn a:hover, .email .block button:hover, .about .text .btn:hove
 
 /*секция с фоном*/
 .info {
-    background: url('img/fon.svg') no-repeat center center fixed;
+    background: url('../img/fon.svg') no-repeat center center fixed;
     background-size: cover;
     padding: 100px 0;
 }
