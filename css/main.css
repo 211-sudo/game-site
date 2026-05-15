@@ -1,0 +1,1045 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16;
+    background: #100901;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.fon{
+    background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(74, 40, 0, 1) 100%);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 50px 0;
+}
+
+header .logo {
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+    position: relative;
+    left: -80px;
+}
+
+header nav {
+    float: right;
+    width: 50%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+header nav ul li.active::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #DC7000;
+    border-radius: 10px;
+    position: relative;
+    left: -15px;
+    top: 10px;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+    border-bottom: 5px solid #DC7000;
+}
+
+header nav ul li.btn a, .email .block button, .about .text .btn, .keks .keks-text .btn {
+    background: #FA9021;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover, .email .block button:hover, .about .text .btn:hover, .keks .keks-text .btn:hover {
+    background: #ad3404;
+}
+
+.hero {
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-info {
+    width: 530px;
+    position: relative;
+    left: 60px;
+}
+
+.hero-info h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #E87D0E;
+}
+
+.hero-info h2 {
+    font-size: 50px;
+    font-weight: 700;
+    position: relative;
+    top:20px;
+}
+
+.hero-info p {
+    font-weight: 500;
+    position: relative;
+    top:40px;
+
+}
+
+.hero-info .btn {
+    background: linear-gradient(120deg,rgba(250, 131, 5, 1) 0%, rgba(251, 158, 60, 1) 100%);
+    color: #fff;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: 0;
+    font-weight: 500;
+    transition: all 500ms ease;
+    position: relative;
+    top: 80px;
+    font-size: 18px;
+}
+
+.hero-info .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hero-info img {
+    position: absolute;
+    top: -150px;
+    right: -800px;
+}
+
+/*игры*/
+.trending {
+    margin-top: 120px;
+    padding-left: 210px;
+    padding-right: 100px;
+}
+
+
+.trending h3 {
+    font-size: 31px;
+    font-weight: 600;
+}
+
+.trending .see-all, .project .see-all {
+    background: #25211D;
+    color: #fff;
+    border-radius: 5px;
+    padding: 12px 23px;
+    font-weight: 500;
+    float: right;
+    display: block;
+    transition: all 500ms ease;
+}
+
+.trending .see-all:hover, .project .see-all:hover {
+    transform: scale(1.1);
+}
+
+.trending .game {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+    gap: 100px;
+}
+
+.trending .game .bebra {
+    flex: 1;
+}
+
+
+
+.trending .game span {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.trending .game span img {
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+.big-text {
+    padding: 100px 0;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    width: 800px;
+}
+
+.banner {
+    padding: 80px 0;
+}
+
+.banner h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.banner p {
+    line-height: 170%; /*межстрочный интервал*/
+    margin-bottom: 30px;
+    width: 550px;
+}
+
+.banner img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/*секция с фоном*/
+.info {
+    background: url('img/fon.svg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.info h3, 
+.info p {
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info h3 {
+    font-size: 30px;
+}
+
+.info .info-img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /*чтобы перебрасывать картинки на новые ряды*/
+}
+
+.info .info-img .block {
+    text-align: center;
+    width: 20%;
+    margin: 60px 2%;
+}
+
+.info .info-img .block img {
+    margin-bottom: 20px;
+}
+
+.project {
+    padding: 150px 0;
+}
+
+.project h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.project p {
+    font-size: 14px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.project .images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.project .see-all {
+    float: none;
+    text-align: center;
+    width: 60px;
+    margin: 0 auto;
+}
+
+/*часть с почтой*/
+
+.email {
+    padding-bottom: 120px;
+}
+
+.email h3 {
+    margin-top: 60px;
+    font-size: 30px
+}
+
+.email p {
+    margin-top: 15px;
+    font-size: 16px;
+    max-width: 540px;
+}
+
+.email .block {
+    background: #1C140F;
+    margin-top: 40px;
+    border-radius: 15px;
+    padding: 40px 3%;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email .block h4 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.email .block p {
+    width: 500px;
+}
+
+.email .block input {
+    background: #fff;
+    border: 0; /*обводка*/
+    border-radius: 5px;
+    width: 380px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    padding: 15px 20px;
+    outline: none;
+    /*чтобы сдвинуть кнопку*/
+    position: relative;
+    right: -100px;
+    z-index: 1;
+    /*чтобы текст не налазил на кнопку*/
+    padding-right: 120px;
+}
+
+.email .block input::placeholder {
+    color: #898989;
+}
+
+.email .block button {
+    cursor: pointer;
+    border: 0;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+
+/*страница about первая секция*/
+.about {
+    position: relative;
+}
+
+.about .obs {
+    padding: 150px 0;
+}
+.about .infor {
+    width: 150px;
+    padding: 50px 0;
+    font-size: 12px;
+}
+
+.about .infor a:first-child {
+    color: #fff;
+}
+
+.about .infor a:last-child {
+    color: #E47500;
+}
+
+.about .text {
+    width: 450px;
+}
+
+.about .text h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.about .text p {
+    line-height: 200%;
+    margin-bottom: 50px;
+}
+
+.about .text .btn {
+    border: 0;
+    border-radius: 20px;
+    width: 160px;
+    color: #fff;
+    padding-right: 40px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.about .text .btn img {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.about img {
+    position: absolute;
+    right: -180px;
+    top: 0;
+}
+
+/*вторая секция*/
+.otziv {
+    padding: 150px 0;
+}
+.otziv h2 {
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+.otziv .blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.otziv .blocks .block {
+    background: #1C140F;
+    width: 380px;
+    height: 350px;
+    border-radius: 20px;
+    padding: 0 40px;
+    padding-top: 80px;
+}
+
+.otziv .blocks .block h3 {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.otziv .blocks .block .b {
+    border-radius: 7px;
+    padding: 10px 20px;
+}
+
+.otziv .blocks .block .b.purple {
+    background: #560F67;
+}
+
+.otziv .blocks .block .b.brown {
+    background: #31190D;
+}
+
+.otziv .blocks .block .b.green {
+    background: #192A1D;
+}
+
+
+/*секция 3*/
+.devka {
+    background: #1C140F no-repeat;
+    padding: 100px 0;
+}
+
+.devka .container {
+    margin-bottom: -100px;
+    display: flex;
+    gap: 300px;
+}
+
+.devka .container .devka-info {
+    width: 540px;
+}
+
+.devka .container .devka-info h4 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 16;
+}
+
+.devka .container .devka-info h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.devka .container .devka-info p {
+    font-size: 16px;
+    line-height: 170%;
+}
+
+/*cекция 4*/
+.fon .team {
+    padding: 200px;
+}
+
+.fon .team h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.fon .team .blocks1 {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fon .team .block {
+    background: #1C140F;
+    border-radius: 15px;
+    width: 300px;
+    height: 250px;
+}
+
+.fon .team .block img {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.fon .team .block h4, .fon .team .block p {
+    padding: 0 1px;
+    text-align: center;
+}
+
+/*Страница контакты*/
+.contact h2 {
+    text-align: center;
+    font-size: 33px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.contact p {
+    text-align: center;
+}
+
+.contact img:first-of-type {
+    width: 1000px;
+    margin: 80px 15%;
+}
+
+.contact img:last-of-type {
+    width: 1200px;
+    margin: 80px 10%;
+}
+
+
+.feedback {
+    background: url(img/fon-cont.svg) no-repeat center center;
+    background-size: cover;
+    padding: 70px 0;
+}
+
+.feedback h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.feedback p {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.feedback form {
+    margin: 80px auto;
+    width: 600px;
+}
+
+.feedback .inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback .inline > div {
+    width: 50%;
+}
+
+.feedback form label {
+    color: #4F4F4F;
+    font-size: 14px;
+}
+
+.feedback form input, .feedback form textarea {
+    background: #2C2420;
+    border-radius: 10px;
+    border: 0.6 solid #CECECE;
+    display: block;
+    width: 90%;
+    padding: 15px 10px;
+    outline: none;
+    color: #fff;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+.feedback form .one-line {
+    width: 95%;
+}
+
+.feedback form textarea {
+    resize: none;
+    height: 200px;
+}
+
+.feedback form button {
+    background: #DC7000;
+    border-radius: 10px;
+    border: 0;
+    float: right;
+    cursor: pointer;
+    padding: 15px 35px;
+    color: #fff;
+    transition: all 500ms ease;
+    position: relative;
+    left: -5px;
+}
+
+.feedback form button:hover {
+    background: #f01811;
+}
+
+/*Старница новости*/
+.news {
+    padding: 80px 0;
+}
+
+.news h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 33px;
+    font-weight: 600;
+}
+
+.news p {
+    text-align: center;
+}
+
+.news input {
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #1C140F;
+    border-radius: 10px;
+    border: 0;
+    padding: 15px 200px 15px 20px;
+    color: #fff;
+}
+
+.news input::placeholder {
+    color: #fff;
+}
+
+.new {
+    display: flex;
+    gap: 350px;
+    margin-bottom: 150px;
+}
+
+.new .blocks2 {
+    width: 600px;
+    margin-top: 50px;
+}
+
+
+.new .blocks2 .block-meta {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+
+.new .blocks2 .block-meta span {
+    background: #2351F5;
+    padding: 10px 30px;
+}
+
+.new .blocks2 .block-meta p {
+    margin-top: 10px;
+}
+
+.new .blocks2 .block-text h3 {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.new .blocks2 .block-text p:first-child {
+    font-size: 17px;
+    line-height: 170%;
+}
+
+.new .blocks2 .block-text p:last-child {
+    font-size: 17px;
+    margin-top: 25px;
+}
+
+.new .blocks2 hr {
+    height: 0.6px;
+    border: 0;
+    background: #A5A5A5;
+    margin: 80px 0;
+}
+
+.new .blocks3 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+    width: 620px;
+}
+
+.new .blocks3-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.new .blocks3-item .block-img1 {
+    flex-shrink: 0;
+}
+
+.new .blocks3-item .block-content {
+    flex: 1;
+}
+
+.new .blocks3-item .block-meta1 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.new .blocks3-item .block-meta1 span {
+    padding: 5px 20px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.new .blocks3-item .block-meta1 p {
+    margin-top: 33px;
+}
+
+.new .blocks3-item .block-content h3 {
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.new .blocks3-item .block-meta1 span.pink {
+    background: #FF8484;
+}
+
+.new .blocks3-item .block-meta1 span.blue {
+    background: #2351F5;
+}
+
+.new .blocks3-item .block-meta1 span.orange {
+    background: #FF7C32;
+}
+
+.new .blocks3-item .block-meta1 span.green {
+    background: #23A54F;
+}
+
+.new .blocks3-item .block-meta1 span.purple {
+    background: #9921C3;
+}
+
+/*Портфолио*/
+.portfolio {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.portfolio h2 {
+    font-size: 33px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.portfolio img {
+    padding: 40px 0;
+}
+
+.video {
+    display: flex;
+    gap: 300px;
+    margin-bottom: 200px;
+}
+
+.video .video-text {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.video h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.video p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.video span {
+    display: block;
+    padding: 10px;
+}
+
+.video span img {
+    position: relative;
+    margin-right: 15px;
+    top: 5px;
+}
+
+.keks {
+    display: flex;
+    margin-bottom: 160px;
+}
+
+.keks .keks-text {
+    width: 550px;
+}
+
+.keks .keks-text h3 {
+    font-size: 30px;
+    
+}
+
+.keks .keks-text p {
+    font-size: 17px;
+    padding: 30px 0;
+}
+
+.keks .keks-text .btn {
+    border-radius: 0;
+    border: 0;
+    padding: 15px 40px;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 16px;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.keks .keks-img {
+    width: 500px;
+    text-align: center;
+    margin-left: 500px;
+    height: 500px;
+}
+
+.keks .keks-img1 {
+    margin-right: 500px;
+    height: 500px;
+    width: 500px;
+}
+
+.otzivs {
+    background: #1C140F;
+}
+
+.otzivs .shapka {
+    text-align: center;
+    width: 450px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.otzivs .shapka h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.otzivs .shapka p {
+    margin-bottom: 80px;
+}
+
+.otzivs .blocksx {
+    display: flex;
+}
+
+.otzivs .blocks-o, .otzivs .blocks-1 {
+    background: #0F0901;
+    border-radius: 10px;
+    border: 2px solid #DC7000;
+    width: 400px;
+    margin-left: 150px;
+    padding: 20px 30px;
+    height: 200px;
+}
+
+.otzivs .blocks-o .block-o, .otzivs .blocks-1 .block-o {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.otzivs .blocks-o .block-o .rait1, .otzivs .blocks-1 .block-o .rait1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.otzivs .blocks-o .block-o .rait1 .rait-text, .otzivs .blocks-1 .block-o .rait1 .rait-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.otzivs .blocks-o .block-o .rait1 .rait-text span, .otzivs .blocks-1 .block-o .rait1 .rait-text span {
+    display: block;
+}
+
+.otzivs .blocks-o .block-o .rait1 .rait-text span:first-child {
+    font-size: 18px;
+}
+
+.otzivs .blocks-o .block-o .rait1 .rait-text span:last-child, .otzivs .blocks-1 .block-o .rait1 .rait-text span:last-child {
+    font-size: 14px;
+    color: #4F5665;
+}
+
+.otzivs .blocks-o .block-o .rait2, .otzivs .blocks-1 .block-o .rait2 {
+    display: flex;
+    align-items: center;
+}
+
+.otzivs .blocks-o .block-o .rait2 img, .otzivs .blocks-1 .block-o .rait2 img{
+    margin-left: 10px;
+}
+
+.otzivs .blocks-o p {
+    font-size: 14px;
+    line-height: 170%;
+    margin-bottom: 20px;
+}
+
+.otzivs .blocks-1 {
+    border: 2px solid #fff;
+}
+
+.nomer {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.strelki {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.strelki img:last-of-type {
+    margin-top: 30px;
+    margin-left: -20px;
+}
+
+/*footer*/
+footer {
+    background: #000;
+    padding: 80px 0;
+}
+
+footer .block {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .block .logo {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+footer .block p {
+    margin-top: 15px;
+    font-size: 16px;
+    width: 370px;
+}
+
+footer .block a {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    color: #fff;
+}
+
+footer .block h4 {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+footer .block ul {
+    list-style: none;
+    margin-top: 25px;
+}
+
+footer .block ul li {
+    font-size: 16px;
+    margin-top: 7px;
+    opacity: 0.8; /*прозрачность текста*/
+}
+
+footer hr {
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background: #ccc;
+}
+
+footer > p {
+    font-size: 13px;
+    opacity: 0.6;
+    text-align: center;
+    margin-bottom: -50px;
+}
+
+footer .block img {
+    margin-top: 100px;
+}
